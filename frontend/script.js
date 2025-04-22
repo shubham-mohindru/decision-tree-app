@@ -6,7 +6,7 @@ async function parseAndRender() {
   // 1️⃣ Call the backend
   let resp;
   try {
-    resp = await fetch('http://127.0.0.1:5000/parse', {
+    resp = await fetch('https://decision-tree-app-gw1t.onrender.com', { … }), {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ text })
