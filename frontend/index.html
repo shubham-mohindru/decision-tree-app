@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Decision Tree App</title>
+
+  <!-- 1) Load Mermaid -->
+  <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+  <script>
+    // Disable auto‑render; we’ll trigger it manually
+    mermaid.initialize({ startOnLoad: false });
+  </script>
+
+  <style>
+    body { font-family: sans-serif; margin: 20px; }
+    textarea { width: 100%; font-family: monospace; margin-bottom: 10px; }
+    button { padding: 8px 16px; }
+    #ev { margin-top: 20px; }
+    #diagram { margin-top: 20px; border: 1px solid #ddd; padding: 10px; }
+  </style>
+</head>
+
+<body>
+  <h1>Decision Tree App</h1>
+
+  <textarea id="input" rows="8">Decision: Dinner
+- Pizza [70%: 10, 30%: -3]
+- Pasta [80%: 8, 20%: -5]</textarea><br>
+
+  <button id="submit">Parse &amp; Visualize</button>
+
+  <div id="ev"></div>
+  <div id="diagram"></div>
+
+  <!-- 2) Our script -->
+  <script src="script.js"></script>
+</body>
+</html>
