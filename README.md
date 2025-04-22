@@ -1,2 +1,2 @@
 # decision-tree-app
-My name is Shubham Mohindru and this is going to be my first test project.
+An app to help you make decisions! Or try to help atleast :_)
